@@ -43,13 +43,14 @@
   list-style: none;
 }
 
-.header__links-list-item .header__link_active {
+.header__link_active {
   text-decoration: none;
 }
 
 .header__logo {
   width: 148px;
   height: 105px;
+  text-decoration: none;
 }
 
 .header__address {
@@ -165,6 +166,7 @@
 .card-link {
   display: block;
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
@@ -175,6 +177,9 @@
   justify-content: space-between;
   height: 100%;
   padding: 48px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__title {
@@ -195,23 +200,14 @@
 
 .card_type_film {
   background-image: url("../images/card-lot-01.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url("../images/card-lot-02.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url("../images/card-lot-03.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .lots__look-more-link {
@@ -220,7 +216,6 @@
   margin-left: 40px;
   font-size: 20px;
   line-height: 23px;
-  text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
   text-underline-position: under;
@@ -231,13 +226,13 @@
   grid-template-columns: 1fr 2fr;
   gap: 13px;
   margin-top: 155px;
+  padding-bottom: 20px;
 }
 
 .about__logo {
   display: flex;
   justify-content: center;
   width: 334px;
-  min-height: 596px;
 }
 
 .about__logo-image {
@@ -259,18 +254,23 @@
   font-size: 40px;
   text-transform: uppercase;
 }
+/* добавила line-height, но у меня 
+ничего не поменялось и в pp, что раньше сходилось,
+так и теперь сходится. Размер взяла из макета
+Работаю с хрома*/
 
 .about__text {
   display: flex;
   flex-direction: column;
   gap: 25px;
   font-size: 20px;
+  line-height: 24px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 52px;
+  margin-top: 68px;
   font-size: 18px;
 }
 
@@ -294,7 +294,6 @@
 }
 
 .footer__menu-link {
-  text-decoration: underline;
   text-underline-position: under;
 }
 
@@ -310,6 +309,10 @@
 
 .footer__social-list-item {
   list-style: none;
+}
+
+.footer__social-link {
+  text-decoration: none;
 }
 
 .footer__social-icon {
