@@ -31,21 +31,18 @@
           alt="Логотип проекта"
         >
       </a>
-      <!-- Здесь у меня тег address в контейнере, потому что к
-        header__address я использую justify-self: flex-end; для
-        позиционирования его в ячейке и последующего использования
-        класса address снизу в футуре. Можно, конечно, обойтись
-        паддингом, ведь он тут так и так используется, но тогда
-        получается какая-то большая и некрасивая цифра, чтобы адрес
-        поставить на место.-->
-      <div class="header__address">
-        <address class="address">
-          <a href="tel:+99995555555">+9 999 555 5555</a>
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <p>наб. Принсенграхт 263-</p>
-          <p>265, Амстердам</p>
-        </address>
-      </div>
+      <!-- Вылетело из головы, чтобы можно второй
+       класс добавить, прошу прощения :( 
+       Миксы почитаю, спасибо большое!-->
+      <address class="address header__address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>
+          наб. Принсенграхт 263-
+          <br>
+          265, Амстердам
+        </p>
+      </address>
     </header>
     <main>
       <section class="cover">
@@ -151,19 +148,20 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__address">
-        <address class="address">
-          <a href="tel:+99995555555">+9 999 555 5555</a>
-          <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-          <p>наб. Принсенграхт 263-265,</p>
-          <p>Амстердам</p>
-        </address>
-      </div>
+      <address class="address footer__address">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>
+          наб. Принсенграхт 263-265,
+          <br>
+          Амстердам
+        </p>
+      </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-list-item">
-            <a class="footer__menu-link footer__menu-link_active" href="#"
-              >главная
+            <a class="footer__menu-link footer__menu-link_active" href="#">
+              главная
             </a>
           </li>
           <li class="footer__menu-list-item">

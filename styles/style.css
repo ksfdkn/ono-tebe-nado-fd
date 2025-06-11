@@ -254,10 +254,6 @@
   font-size: 40px;
   text-transform: uppercase;
 }
-/* добавила line-height, но у меня 
-ничего не поменялось и в pp, что раньше сходилось,
-так и теперь сходится. Размер взяла из макета
-Работаю с хрома*/
 
 .about__text {
   display: flex;
@@ -275,10 +271,6 @@
 }
 
 .footer__address {
-  font-style: normal;
-}
-
-.footer__address .address {
   padding-right: 0;
 }
 
